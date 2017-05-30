@@ -119,8 +119,8 @@ It’s a Chrome extension (in beta) that overlays a column grid, baseline (or le
 
 There are two ways to install the extension:
 
-* [Using the GitHub Desktop Client](https://github.com/code-warrior/the-modular-grid#github-desktop-installation)
-* [Using the command line](https://github.com/code-warrior/the-modular-grid#command-line-installation)
+* [Via the GitHub Desktop Client](https://github.com/code-warrior/the-modular-grid#github-desktop-installation)
+* [Via the command line](https://github.com/code-warrior/the-modular-grid#command-line-installation)
 
 ---
 
