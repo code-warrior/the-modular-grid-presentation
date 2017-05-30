@@ -1,0 +1,331 @@
+@import 'reset';
+@import 'variables';
+@import 'fonts';
+
+body {
+   // background: transparent url('../img/focus.jpg') no-repeat scroll center top;
+   // background: transparent url('../img/focus-without-grid.png') no-repeat scroll center top;
+   margin: 0 auto;
+}
+
+header {
+   text-align: center;
+   color: #222;
+   height: (28 * $grid--leading);
+   background-image: url('../img/large-banner-image.png');
+   background-size: cover;
+
+   h1 {
+      position: relative;
+      text-align: left;
+      vertical-align: top;
+      font: {
+          size: (3.75 * $font-size--base);
+          family: $font-stack--pacifico;
+      }
+      margin: 0 auto;
+      width: (3 * $grid--unit);
+      padding-top: (4.5 * $grid--leading);
+
+      img {
+         position: absolute;
+         width: $width--focus-logo;
+      }
+
+      span {
+         padding-left: ($grid--unit + 10);
+      }
+   }
+
+   p {
+      margin-top: (2.75 * $grid--leading);
+      font: {
+         weight: $light;
+         size: (2.25 * $font-size--base);
+         family: $font-stack--raleway;
+      }
+   }
+
+   img[src="img/down-arrow.png"] {
+      margin-top: (2.75 * $grid--leading);
+   }
+}
+
+footer {
+   font-family: $font-stack--helvetica-neue;
+   background-color: $bg-color--footer;
+
+   nav {
+      margin: auto;
+      max-width: $width--footer-nav;
+      height: $height--footer;
+
+      ul {
+         text-align: center;
+      }
+
+      li {
+         display: inline-block;
+         line-height: $height--footer;
+         padding-right: 30px;
+
+         &:last-of-type {
+            padding-right: 0;
+         }
+      }
+   }
+}
+
+a {
+   color: $color--main;
+   font-size: $font-size--base;
+
+   &:link {
+      text-decoration: none;
+   }
+}
+
+blockquote {
+   margin-top: (2.16 * $grid--leading);
+   text-align: center;
+   font: {
+      weight: $regular;
+      size: (1.5 * $font-size--base);
+      family: $font-stack--raleway;
+   }
+}
+
+cite {
+   margin: {
+      top: (1.15 * $grid--leading);
+      bottom: (2.25 * $grid--leading);
+   }
+   display: block;
+   text-align: center;
+   font: {
+      size: (.875 * $font-size--base);
+      family: $font-stack--helvetica-neue;
+   }
+}
+
+strong {
+   font-weight: bold;
+}
+
+h2 {
+   font: $semi-bold #{1.5 * $font-size--base} $font-stack--raleway;
+}
+
+#features {
+   &__container {
+      position: relative;
+      text-align: center;
+      margin: 0 auto;
+      width: ((14 * $grid--unit) + $grid--column-width);
+   }
+
+   span {
+      width: $width--phone-image;
+      height: $height--phone-image;
+      position: relative;
+      display: inline-block;
+      margin-bottom: $offset--image-bottom; // Compensate for the shift of the iPhone, because of the relative positioning
+
+      img {
+         position: absolute;
+
+         // The phone
+         &:nth-of-type(1) {
+            top: $offset--image-bottom + 12; // Compensate for the shift of the iPhone, because of the relative positioning
+            left: 6px;
+         }
+
+         // The first white dot, in the upper right hand area
+         &:nth-of-type(2) {
+            top: -(3 * $grid--leading);
+            left: (3.55 * $grid--unit);
+         }
+
+         // The second white dot, in the upper left hand area
+         &:nth-of-type(3) {
+            top: -4px;
+            left: (1.85 * $grid--unit);
+         }
+
+         // The only black dot
+         &:nth-of-type(4) {
+            top: (4.5 * $grid--leading);
+            left: (3.55 * $grid--unit);
+         }
+
+         // The cursor
+         &:nth-of-type(5) {
+            top: (5 * $grid--leading);
+            left: (3.7 * $grid--unit);
+         }
+
+         // The angled line
+         &:nth-of-type(6) {
+            top: (5 * $grid--leading);
+            left: (3.7 * $grid--unit);
+         }
+
+         // The last white dot, in the lower left hand area of the phone
+         &:nth-of-type(7) {
+            top: (8.2 * $grid--leading);
+            left: (1.9 * $grid--unit);
+         }
+      }
+   }
+
+   section {
+      text-align: left;
+      position: absolute;
+      width: (4 * $grid--unit);
+
+      &:nth-of-type(1) {
+         top: 10px;
+         left: $grid--column-width;
+      }
+
+      &:nth-of-type(2) {
+         top: (7.2 * $grid--leading);
+         left: $grid--column-width;
+      }
+
+      &:nth-of-type(3) {
+         top: 10px;
+         left: (10 * $grid--unit) + $grid--gutter-width;
+      }
+
+      &:nth-of-type(4) {
+         top: (7.2 * $grid--leading);
+         left: (10 * $grid--unit) + $grid--gutter-width;
+      }
+   }
+
+   h2 {
+      font-size: (1.375 * $font-size--base);
+      line-height: (.72 * $grid--leading);
+      margin: {
+         top: (2 * $grid--leading);
+         bottom: (.75 * $grid--leading);
+      }
+   }
+
+   p {
+      color: $color--main;
+
+      font: {
+         family: $font-stack--helvetica-neue;
+         size: $font-size--base;
+      }
+
+      line-height: ($grid--leading + 1);
+   }
+}
+
+#get-the-app {
+   background-color: $bg-color--footer; // $bg-color--secondary
+
+   &__container {
+      overflow: auto;
+      position: relative;
+      margin: 0 auto;
+      width: ((15 * $grid--unit) - $grid--gutter-width);
+      padding: {
+         top: (2 * $grid--leading);
+         bottom: (2.8 * $grid--leading);
+      }
+
+      h2 {
+         position: absolute;
+         top: (2.2 * $grid--leading);
+         font-size: (1.375 * $font-size--base);
+         color: #222;
+      }
+
+      p {
+         position: absolute;
+         top: (4 * $grid--leading);
+         width: (6 * $grid--unit) + $grid--column-width;
+         line-height: ($grid--leading + 1);
+         color: $color--main;
+         font: {
+            size: $font-size--base;
+            family: $font-stack--helvetica-neue
+         }
+      }
+
+      #mobile-operating-systems {
+         position: absolute;
+         top: (9 * $grid--leading);
+
+         img {
+            padding-right: 13px;
+         }
+      }
+
+      #movie-poster {
+         position: relative;
+         width: 500px;
+         height: 307px;
+         float: right;
+
+         img:nth-of-type(1) {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            z-index: 1;
+         }
+
+         img:nth-of-type(2) {
+            position: absolute;
+            top: 0;
+            left: 0;
+         }
+
+         img:nth-of-type(3) {
+            position: absolute;
+            bottom: 20px;
+            left: 110px;
+         }
+      }
+   }
+}
+
+#user-community {
+   background: url('../img/people.png') repeat-x scroll center (4.94 * $grid--leading),
+               url('../img/active-person.png') no-repeat scroll 60.2% 37.5%;
+
+   h2 {
+      text-align: center;
+      margin-top: (17.25 * $grid--leading);
+   }
+
+   p {
+      margin: {
+         top: (.47 * $grid--leading);
+         bottom: $grid--leading;
+      }
+      color: $color--main;
+      text-align: center;
+      font: {
+         size: $font-size--base;
+         family: $font-stack--helvetica-neue
+      }
+      line-height: ($grid--leading + 1);
+   }
+}
+
+#social-media-nav {
+   margin: -3px auto (2.32 * $grid--leading);
+   text-align: center;
+   width: ((3 * $grid--unit) + $grid--gutter-width);
+
+   a:not(:last-of-type) {
+      display: inline-block;
+      padding-right: 10px;
+   }
+}
+
