@@ -10,7 +10,7 @@ body {
 
 header {
    text-align: center;
-   color: #222;
+   color: $color--text;
    height: (28 * $grid--leading);
    background-image: url('../img/large-banner-image.png');
    background-size: cover;
@@ -242,7 +242,7 @@ h2 {
          position: absolute;
          top: (2.2 * $grid--leading);
          font-size: (1.375 * $font-size--base);
-         color: #222;
+         color: $color--text;
       }
 
       p {
