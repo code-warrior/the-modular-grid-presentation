@@ -20,8 +20,8 @@ header {
       text-align: left;
       vertical-align: top;
       font: {
-          size: (3.75 * $font-size--base);
-          family: $font-stack--pacifico;
+         size: (3.75 * $font-size--base);
+         family: $font-stack--pacifico;
       }
       margin: 0 auto;
       width: (3 * $grid--unit);
@@ -296,7 +296,7 @@ h2 {
 
 #user-community {
    background: url('../img/people.png') repeat-x scroll center (4.94 * $grid--leading),
-               url('../img/active-person.png') no-repeat scroll 60.2% 37.5%;
+   url('../img/active-person.png') no-repeat scroll 60.2% 37.5%;
 
    h2 {
       text-align: center;
