@@ -255,7 +255,7 @@ h2 {
          color: $color--main;
          font: {
             size: $font-size--base;
-            family: $font-stack--helvetica-neue
+            family: $font-stack--helvetica-neue;
          }
       }
 
@@ -316,7 +316,7 @@ h2 {
       text-align: center;
       font: {
          size: $font-size--base;
-         family: $font-stack--helvetica-neue
+         family: $font-stack--helvetica-neue;
       }
       line-height: ($grid--leading + 1);
    }
