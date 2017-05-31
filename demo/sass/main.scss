@@ -46,8 +46,10 @@ header {
       }
    }
 
-   img[src="img/down-arrow.png"] {
-      margin-top: (2.75 * $grid--leading);
+   img {
+      &[src='img/down-arrow.png'] {
+         margin-top: (2.75 * $grid--leading);
+      }
    }
 }
 
@@ -272,23 +274,25 @@ h2 {
          height: 307px;
          float: right;
 
-         img:nth-of-type(1) {
-            position: absolute;
-            left: 20px;
-            bottom: 20px;
-            z-index: 1;
-         }
+         img {
+            &:nth-of-type(1) {
+               position: absolute;
+               left: 20px;
+               bottom: 20px;
+               z-index: 1;
+            }
 
-         img:nth-of-type(2) {
-            position: absolute;
-            top: 0;
-            left: 0;
-         }
+            &:nth-of-type(2) {
+               position: absolute;
+               top: 0;
+               left: 0;
+            }
 
-         img:nth-of-type(3) {
-            position: absolute;
-            bottom: 20px;
-            left: 110px;
+            &:nth-of-type(3) {
+               position: absolute;
+               bottom: 20px;
+               left: 110px;
+            }
          }
       }
    }
@@ -323,9 +327,10 @@ h2 {
    text-align: center;
    width: ((3 * $grid--unit) + $grid--gutter-width);
 
-   a:not(:last-of-type) {
-      display: inline-block;
-      padding-right: 10px;
+   a {
+      &:not(:last-of-type) {
+         display: inline-block;
+         padding-right: 10px;
+      }
    }
 }
-
