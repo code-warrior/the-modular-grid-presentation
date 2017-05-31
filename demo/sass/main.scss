@@ -9,23 +9,23 @@ body {
 }
 
 header {
-   text-align: center;
-   color: $color--text;
-   height: (28 * $grid--leading);
    background-image: url('../img/large-banner-image.png');
    background-size: cover;
+   height: (28 * $grid--leading);
+   text-align: center;
+   color: $color--text;
 
    h1 {
       position: relative;
-      text-align: left;
+      margin: 0 auto;
+      padding-top: (4.5 * $grid--leading);
+      width: (3 * $grid--unit);
       vertical-align: top;
+      text-align: left;
       font: {
          size: (3.75 * $font-size--base);
          family: $font-stack--pacifico;
       }
-      margin: 0 auto;
-      width: (3 * $grid--unit);
-      padding-top: (4.5 * $grid--leading);
 
       img {
          position: absolute;
@@ -54,8 +54,8 @@ header {
 }
 
 footer {
-   font-family: $font-stack--helvetica-neue;
    background-color: $bg-color--footer;
+   font-family: $font-stack--helvetica-neue;
 
    nav {
       margin: auto;
@@ -98,11 +98,11 @@ blockquote {
 }
 
 cite {
+   display: block;
    margin: {
       top: (1.15 * $grid--leading);
       bottom: (2.25 * $grid--leading);
    }
-   display: block;
    text-align: center;
    font: {
       size: (.875 * $font-size--base);
@@ -121,17 +121,17 @@ h2 {
 #features {
    &__container {
       position: relative;
-      text-align: center;
       margin: 0 auto;
       width: ((14 * $grid--unit) + $grid--column-width);
+      text-align: center;
    }
 
    span {
+      display: inline-block;
+      position: relative;
+      margin-bottom: $offset--image-bottom; // Compensate for the shift of the iPhone, because of the relative positioning
       width: $width--phone-image;
       height: $height--phone-image;
-      position: relative;
-      display: inline-block;
-      margin-bottom: $offset--image-bottom; // Compensate for the shift of the iPhone, because of the relative positioning
 
       img {
          position: absolute;
@@ -181,9 +181,9 @@ h2 {
    }
 
    section {
-      text-align: left;
       position: absolute;
       width: (4 * $grid--unit);
+      text-align: left;
 
       &:nth-of-type(1) {
          top: 10px;
@@ -207,23 +207,22 @@ h2 {
    }
 
    h2 {
-      font-size: (1.375 * $font-size--base);
-      line-height: (.72 * $grid--leading);
       margin: {
          top: (2 * $grid--leading);
          bottom: (.75 * $grid--leading);
       }
+      line-height: (.72 * $grid--leading);
+      font-size: (1.375 * $font-size--base);
    }
 
    p {
+      line-height: ($grid--leading + 1);
       color: $color--main;
 
       font: {
          family: $font-stack--helvetica-neue;
          size: $font-size--base;
       }
-
-      line-height: ($grid--leading + 1);
    }
 }
 
@@ -231,20 +230,20 @@ h2 {
    background-color: $bg-color--footer; // $bg-color--secondary
 
    &__container {
-      overflow: auto;
       position: relative;
       margin: 0 auto;
-      width: ((15 * $grid--unit) - $grid--gutter-width);
       padding: {
          top: (2 * $grid--leading);
          bottom: (2.8 * $grid--leading);
       }
+      width: ((15 * $grid--unit) - $grid--gutter-width);
+      overflow: auto;
 
       h2 {
          position: absolute;
          top: (2.2 * $grid--leading);
-         font-size: (1.375 * $font-size--base);
          color: $color--text;
+         font-size: (1.375 * $font-size--base);
       }
 
       p {
@@ -270,15 +269,15 @@ h2 {
 
       #movie-poster {
          position: relative;
+         float: right;
          width: 500px;
          height: 307px;
-         float: right;
 
          img {
             &:nth-of-type(1) {
                position: absolute;
-               left: 20px;
                bottom: 20px;
+               left: 20px;
                z-index: 1;
             }
 
@@ -303,8 +302,8 @@ h2 {
    url('../img/active-person.png') no-repeat scroll 60.2% 37.5%;
 
    h2 {
-      text-align: center;
       margin-top: (17.25 * $grid--leading);
+      text-align: center;
    }
 
    p {
@@ -312,20 +311,20 @@ h2 {
          top: (.47 * $grid--leading);
          bottom: $grid--leading;
       }
-      color: $color--main;
       text-align: center;
+      line-height: ($grid--leading + 1);
+      color: $color--main;
       font: {
          size: $font-size--base;
          family: $font-stack--helvetica-neue;
       }
-      line-height: ($grid--leading + 1);
    }
 }
 
 #social-media-nav {
    margin: -3px auto (2.32 * $grid--leading);
-   text-align: center;
    width: ((3 * $grid--unit) + $grid--gutter-width);
+   text-align: center;
 
    a {
       &:not(:last-of-type) {
