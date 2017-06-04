@@ -10,9 +10,9 @@ footer: The Modular Grid: A Chrome Extension (in beta)
 
 Roy Vanegas
 
-## GothamSass
+## ITP Camp 2017
 ## New York, NY
-## 30 May 2017
+## 5 June 2017
 
 ^
 * Get WiFi password
