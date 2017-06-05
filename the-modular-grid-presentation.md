@@ -126,20 +126,17 @@ There are two ways to install the extension:
 
 [.footer: Installation]
 
-### [fit] CLI Install
+### [fit] GitHub Desktop Install
 
-I’ll discuss installation via the command line.
+[https://github.com/code-warrior/the-modular-grid#github-desktop-installation](https://github.com/code-warrior/the-modular-grid#github-desktop-installation)
 
 ---
 
 [.footer: Installation]
 
-### [fit] CLI Install Steps
+### [fit] CLI Install
 
-1. `git clone git@github.com:code-warrior/the-modular-grid`
-2.  Launch Chrome and bring up the extensions page: `chrome://extensions`
-3. Locate `the-modular-grid` folder created in step 1.
-4. Drag the `extension` folder over the Chrome Extensions window.
+[https://github.com/code-warrior/the-modular-grid#command-line-installation](https://github.com/code-warrior/the-modular-grid#command-line-installation)
 
 ---
 
