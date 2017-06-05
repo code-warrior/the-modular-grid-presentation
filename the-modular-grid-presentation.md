@@ -10,9 +10,9 @@ footer: The Modular Grid: A Chrome Extension (in beta)
 
 Roy Vanegas
 
-## GothamSass
+## ITP Camp 2017
 ## New York, NY
-## 30 May 2017
+## 5 June 2017
 
 ^
 * Get WiFi password
@@ -26,6 +26,7 @@ Roy Vanegas
 
 **Slides** [http://bit.ly/github-tmgp](http://bit.ly/github-tmgp)
 **Extension** [http://bit.ly/github-tmg](http://bit.ly/github-tmg)
+**Demo** [Folder](https://github.com/code-warrior/the-modular-grid-presentation/tree/master/demo)
 
 I’ll show these links again at the end of the talk.
 
@@ -60,8 +61,7 @@ I’ll show these links again at the end of the talk.
 
 ## [fit] Who’s The Target Audience?
 
-* Web developers looking for near-perfect pixel translations of design comps
-* Web developers with a basic understanding of Sass
+* Web developers with a knowledge of Sass (or other CSS preprocessor) who are looking for near-perfect pixel translations of comprehensive designs, or comps
 * Web designers who want to verify work done by the web dev team
 
 ---
@@ -126,20 +126,17 @@ There are two ways to install the extension:
 
 [.footer: Installation]
 
-### [fit] CLI Install
+### [fit] GitHub Desktop Install
 
-I’ll discuss installation via the command line.
+[https://github.com/code-warrior/the-modular-grid#github-desktop-installation](https://github.com/code-warrior/the-modular-grid#github-desktop-installation)
 
 ---
 
 [.footer: Installation]
 
-### [fit] CLI Install Steps
+### [fit] CLI Install
 
-1. `git clone git@github.com:code-warrior/the-modular-grid`
-2.  Launch Chrome and bring up the extensions page: `chrome://extensions`
-3. Locate `the-modular-grid` folder created in step 1.
-4. Drag the `extension` folder over the Chrome Extensions window.
+[https://github.com/code-warrior/the-modular-grid#command-line-installation](https://github.com/code-warrior/the-modular-grid#command-line-installation)
 
 ---
 
@@ -189,7 +186,7 @@ Now the variables.
 
 ### [fit] Sass Variables
 
-Let’s use 60 pixels for the column:
+Let’s use 60 pixels for the column, but, of course, you can define your own pixel width for columns:
 
 ```scss
 $grid--column-width: 60px;

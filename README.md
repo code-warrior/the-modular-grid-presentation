@@ -1,8 +1,8 @@
 # The Modular Grid Presentation and Demo
 
-This is the repo for the files used to present The Modular Grid at GothamSass (hosted by ThoughtWorks, 99 Madison Ave, 15th Flr, New York, NY 10019) on 30 May 2017.
+This is the repo for the files used to present The Modular Grid at NYU’s ITP Camp 2017 on 5 June 2017.
 
-* [Deck](the-modular-grid-presentation.pdf)
+* [Slides](the-modular-grid-presentation.pdf)
 * [Demo](demo) (Compile Sass from root folder: `sass sass/main.scss:css/main.css`)
 * [Extension](https://github.com/code-warrior/the-modular-grid)
 
