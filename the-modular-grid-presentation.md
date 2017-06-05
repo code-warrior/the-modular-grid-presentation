@@ -26,6 +26,7 @@ Roy Vanegas
 
 **Slides** [http://bit.ly/github-tmgp](http://bit.ly/github-tmgp)
 **Extension** [http://bit.ly/github-tmg](http://bit.ly/github-tmg)
+**Demo** [Folder](https://github.com/code-warrior/the-modular-grid-presentation/tree/master/demo)
 
 I’ll show these links again at the end of the talk.
 
