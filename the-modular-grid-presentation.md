@@ -186,7 +186,7 @@ Now the variables.
 
 ### [fit] Sass Variables
 
-Let’s use 60 pixels for the column:
+Let’s use 60 pixels for the column, but, of course, you can define your own pixel width for columns:
 
 ```scss
 $grid--column-width: 60px;
