@@ -61,8 +61,7 @@ I’ll show these links again at the end of the talk.
 
 ## [fit] Who’s The Target Audience?
 
-* Web developers looking for near-perfect pixel translations of design comps
-* Web developers with a basic understanding of Sass
+* Web developers with a knowledge of Sass (or other CSS preprocessor) who are looking for near-perfect pixel translations of comprehensive designs, or comps
 * Web designers who want to verify work done by the web dev team
 
 ---
