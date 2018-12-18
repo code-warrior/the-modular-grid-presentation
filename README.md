@@ -8,5 +8,5 @@ This is the repo for the files used to present The Modular Grid at GothamSass (h
 
 ## Credits
 
-Fonts: [Raleway](https://fonts.google.com/specimen/Raleway), [Pacifico](https://fonts.google.com/specimen/Pacifico)
+Fonts: [Raleway](https://fonts.google.com/specimen/Raleway), [Pacifico](https://fonts.google.com/specimen/Pacifico)  
 Comp: [Focus](http://www.bestpsdfreebies.com/freebie/focus-psd-theme/) by Michael Reimer
